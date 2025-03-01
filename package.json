@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.9",
+    "@tailwindcss/postcss": "^4.0.9",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.9"
+  },
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./css/index.css -o ./css/index.min.css --watch",
+    "build": "postcss css/index.css --o css/index.min.css --env production"
+  }
+}
