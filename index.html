@@ -68,9 +68,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 d-none d-md-block">
+                    <div class="col-sm-12 col-md-6 md:hidden lg:flex justify-end">
                         <div class="hero-image">
-                            <img src="img/jp4.png" alt="Hero Image">
+                            <img src="img/jp4.png" alt="Hero Image" class="h-full">
                         </div>
                     </div>
                 </div>
@@ -98,10 +98,10 @@
                                 </p>
                             </div>
                             <div class="skills">
-                                <h4 class="font-bold">Skills & Technologies</h4>
+                                <h4 class="font-extrabold mb-2">Skills & Technologies</h4>
                                 <div class="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-6">
                                     <!-- Backend -->
-                                    <div class="bg-gray-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-4">
+                                    <div class="bg-gray-100 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-shadow duration-300 transition-transform duration-300 p-4">
                                         <h5 class="font-bold mb-2 text-xl">Backend</h3>
                                         <ul class="list-disc">
                                             <li class="pl-2 mb-1 flex items-center"><i class="fa-brands fa-php mr-2 text-blue-500"></i>PHP</li>
@@ -110,7 +110,7 @@
                                         </ul>
                                     </div>
                                     <!-- Frontend -->
-                                    <div class="bg-gray-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-4">
+                                    <div class="bg-gray-100 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-shadow duration-300 transition-transform duration-300 p-4">
                                         <h5 class="font-bold mb-2 text-lg">Frontend</h3>
                                         <ul class="list-disc">
                                             <li class="pl-2 mb-1 flex items-center"><i class="fa-brands fa-html5 mr-2 text-orange-500"></i>HTML5</li>
@@ -120,7 +120,7 @@
                                         </ul>
                                     </div>
                                     <!-- Frameworks & Libraries -->
-                                    <div class="bg-gray-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-4">
+                                    <div class="bg-gray-100 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-shadow duration-300 transition-transform duration-300 p-4">
                                         <h5 class="font-bold mb-2 text-lg">Frameworks & Libraries</h3>
                                         <ul class="list-disc">
                                             <li class="pl-2 mb-1 flex items-center"><i class="fa-brands fa-bootstrap mr-2 text-purple-500"></i>Bootstrap</li>
@@ -129,7 +129,7 @@
                                         </ul>
                                     </div>
                                     <!-- CMS & E-commerce -->
-                                    <div class="bg-gray-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-4">
+                                    <div class="bg-gray-100 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-shadow duration-300 transition-transform duration-300 p-4">
                                         <h5 class="font-bold mb-2 text-lg">CMS & E-commerce</h3>
                                         <ul class="list-disc">
                                             <li class="pl-2 mb-1 flex items-center"><i class="fa-brands fa-wordpress mr-2 text-blue-700"></i>Wordpress</li>
@@ -140,7 +140,7 @@
                                         </ul>
                                     </div>
                                     <!-- AWS Cloud Experience -->
-                                    <div class="bg-gray-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-4">
+                                    <div class="bg-gray-100 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-shadow duration-300 transition-transform duration-300 p-4">
                                         <h5 class="font-bold mb-2 text-lg">AWS Cloud Experience</h3>
                                         <ul class="list-disc">
                                             <li class="pl-2 mb-1 flex items-center"><img src="img/icons/amazonec2.svg" class="mr-2 h-5 w-5" alt="EC2">EC2</li>
@@ -150,7 +150,7 @@
                                         </ul>
                                     </div>
                                     <!-- Development Tools -->
-                                    <div class="bg-gray-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-4">
+                                    <div class="bg-gray-100 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-shadow duration-300 transition-transform duration-300 p-4">
                                         <h5 class="font-bold mb-2 text-lg">Development Tools</h3>
                                         <ul class="list-disc">
                                             <li class="pl-2 mb-1 flex items-center"><i class="fa-brands fa-git mr-2 text-red-600"></i>Git</li>
@@ -170,27 +170,27 @@
             </div>            
         </div>
         <style>
-            .skills .bg-gray-100 {
-              background-color: #f7fafc; /* Light gray background */
-              border: 1px solid #e2e8f0; /* Light border */
+            /* .skills .bg-gray-100 {
+              background-color: #f7fafc;
+              border: 1px solid #e2e8f0;
             }
-          
+
             .skills .bg-gray-100:hover {
-              background-color: #edf2f7; /* Slightly darker gray on hover */
-              border-color: #cbd5e0; /* Slightly darker border on hover */
-            }
-          
+              background-color: #edf2f7;
+              border-color: #cbd5e0;
+            } */
+
             .skills ul {
               list-style-type: disc;
               padding-left: 0;
             }
-          
+
             .skills li {
               margin-bottom: 0.25rem;
               display: flex;
               align-items: center;
             }
-          
+
             .skills li i, .skills li img {
               margin-right: 0.5rem;
               width: 1.25rem;
@@ -246,7 +246,7 @@
                                 <li><strong>UAT and Testing Plans:</strong> Experience in User Acceptance Testing (UAT), developing testing plans, site operations, and UI/UX testing.</li>
                                 <li><strong>UAT Tester Management:</strong> Managed the activity of UAT testers to ensure thorough system functionality testing within project timescales and to a high quality.</li>
                             </ul>                              
-                        </div>
+                        </div>+
                     </div>
                 </div>
             </div>
@@ -342,7 +342,7 @@
                         </div>
                     </div>
                 </div>
- 
+
             </div>
         </div>
 
@@ -395,7 +395,7 @@
                     <div class="col-md-12 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="contact-item">
                             <div class="contact-text">
-                                <p><i class="fa-solid fa-phone"></i> +639959960715</p>
+                                <p><i class="fa-solid fa-phone"></i> +639171448853</p>
                             </div>
                         </div>
                     </div>
@@ -406,7 +406,7 @@
                                     <i class="fa-solid fa-envelope"></i>
                                     <a href="mailto:juliusphilipponce@gmail.com">juliusphilipponce@gmail.com</a>
                                 </p>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -436,12 +436,12 @@
 
         <div class="footer wow fadeIn" data-wow-delay="0.3s">
             <div class="container copyright">
-                <p>&copy; <a href="#">Julius Philip Ponce</a>, All Right Reserved | Designed By <a href="#">Julius Philip Ponce</a></p>
+                <p>&copy; <a href="https://www.juliusphilip.xyz/">Julius Philip Ponce</a>, All Right Reserved | Designed By <a href="https://www.juliusphilip.xyz/">Julius Philip Ponce</a></p>
             </div>
         </div>
 
         <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
-        
+
         <div id="loader" class="show">
             <div class="loader"></div>
         </div>
