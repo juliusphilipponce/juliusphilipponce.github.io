@@ -33,42 +33,64 @@
     <body data-spy="scroll" data-target=".navbar" data-offset="51">
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TR87W34H"
             height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <div class="navbar navbar-expand-lg bg-light navbar-light">
-            <div class="container-fluid">
-                <a href="index.html" class="navbar-brand d-none">JP</a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-gray-50" id="navbar">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-end h-16">
+                    <!-- Mobile menu button -->
+                    <div class="flex items-center -mr-2 lg:hidden">
+                        <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none" 
+                                id="mobile-menu-button" 
+                                aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
 
-                <div class="navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
-                        <a href="#home" class="nav-item nav-link active">Home</a>
-                        <a href="#about" class="nav-item nav-link">About</a>                        
-                        <a href="#experience" class="nav-item nav-link">Experience</a>
-                        <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-                        <a href="#education" class="nav-item nav-link">Education</a>
-                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                    <!-- Desktop menu -->
+                    <div class="hidden lg:flex lg:items-center">
+                        <div class="flex space-x-4">
+                            <a href="#home" class="px-3 py-2 text-sm font-medium text-gray-900 lg:text-white no-underline hover:text-blue-600">Home</a>
+                            <a href="#about" class="px-3 py-2 text-sm font-medium text-gray-700 lg:text-white no-underline hover:text-blue-600">About</a>
+                            <a href="#experience" class="px-3 py-2 text-sm font-medium text-gray-700 lg:text-white no-underline hover:text-blue-600">Experience</a>
+                            <a href="#portfolio" class="px-3 py-2 text-sm font-medium text-gray-700 lg:text-white no-underline hover:text-blue-600">Portfolio</a>
+                            <a href="#education" class="px-3 py-2 text-sm font-medium text-gray-700 lg:text-white no-underline hover:text-blue-600">Education</a>
+                            <a href="#contact" class="px-3 py-2 text-sm font-medium text-gray-700 lg:text-white no-underline hover:text-blue-600">Contact</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>        
 
-        <div class="hero" id="home">
+            <!-- Mobile menu, show/hide based on menu state -->
+            <div class="hidden lg:hidden bg-gray-50" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a href="#home" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">Home</a>
+                    <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">About</a>
+                    <a href="#experience" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">Experience</a>
+                    <a href="#portfolio" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">Portfolio</a>
+                    <a href="#education" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">Education</a>
+                    <a href="#contact" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero h-screen flex items-center justify-center" id="home">
             <div class="container-fluid">
                 <div class="row align-items-center">
-                    <div class="col-sm-12 col-md-6">
+                    <div class="col-12 col-lg-6">
                         <div class="hero-content">
-                            <div class="hero-text">
+                            <div class="hero-text text-center text-lg-start">
                                 <p>I'm</p>
                                 <h1>Julius Philip Ponce</h1>
                                 <h3>Web Developer | E-commerce plugin specialist | Full-stack PHP Developer</h3>
                             </div>
-                            <div class="hero-btn">
+                            <div class="hero-btn text-center text-lg-start md:w-full">
                                  <a class="btn" href="#contact">Contact Me</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 md:hidden lg:flex justify-end">
+                    <div class="col-sm-12 col-md-6 hidden lg:flex justify-end">
                         <div class="hero-image">
                             <img src="img/jp4.png" alt="Hero Image" class="h-full">
                         </div>
@@ -78,7 +100,7 @@
             <div class="mouse-wrapper"><div class="mouse"></div></div>
         </div>
 
-        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+        <div class="about wow fadeInUp pt-10 lg:pt-20" data-wow-delay="0.1s" id="about">
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
@@ -99,7 +121,7 @@
                             </div>
                             <div class="skills">
                                 <h4 class="font-extrabold mb-2">Skills & Technologies</h4>
-                                <div class="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                                     <!-- Backend -->
                                     <div class="bg-gray-100 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-shadow duration-300 transition-transform duration-300 p-4">
                                         <h5 class="font-bold mb-2 text-xl">Backend</h3>
@@ -169,36 +191,8 @@
                 </div>
             </div>            
         </div>
-        <style>
-            /* .skills .bg-gray-100 {
-              background-color: #f7fafc;
-              border: 1px solid #e2e8f0;
-            }
 
-            .skills .bg-gray-100:hover {
-              background-color: #edf2f7;
-              border-color: #cbd5e0;
-            } */
-
-            .skills ul {
-              list-style-type: disc;
-              padding-left: 0;
-            }
-
-            .skills li {
-              margin-bottom: 0.25rem;
-              display: flex;
-              align-items: center;
-            }
-
-            .skills li i, .skills li img {
-              margin-right: 0.5rem;
-              width: 1.25rem;
-              height: 1.25rem;
-            }
-          </style>
-
-        <div class="experience" id="experience">
+        <div class="experience pt-10 lg:pt-40" id="experience">
             <div class="container">
                 <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                     <p>My Resume</p>
@@ -246,13 +240,13 @@
                                 <li><strong>UAT and Testing Plans:</strong> Experience in User Acceptance Testing (UAT), developing testing plans, site operations, and UI/UX testing.</li>
                                 <li><strong>UAT Tester Management:</strong> Managed the activity of UAT testers to ensure thorough system functionality testing within project timescales and to a high quality.</li>
                             </ul>                              
-                        </div>+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="portfolio" id="portfolio">
+        <div class="portfolio pt-10 lg:pt-20" id="portfolio">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                     <p>My Portfolio</p>
@@ -346,7 +340,7 @@
             </div>
         </div>
 
-        <div class="education experience" id="education">
+        <div class="education experience pt-10 lg:pt-20" id="education">
             <div class="container">
                 <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                     <p>My Education</p>
@@ -378,7 +372,7 @@
             </div>
         </div>
 
-        <div class="contact" id="contact">
+        <div class="contact pt-10 lg:pt-20" id="contact">
             <div class="container text-center">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                     <p>Contact Me</p>
@@ -458,5 +452,44 @@
         <script src="mail/jqBootstrapValidation.min.js"></script>
         <script src="mail/contact.js"></script>
         <script src="js/main.js"></script>
+
+        <script>
+            // Add this JavaScript for mobile menu toggle functionality
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            const navbar = document.getElementById('navbar');
+            const navLinks = navbar.querySelectorAll('.lg\\:flex a');
+            
+            // Initial check on page load
+            checkScroll();
+
+            // Add scroll event listener
+            window.addEventListener('scroll', checkScroll);
+
+            function checkScroll() {
+                if (window.scrollY === 0) {
+                    // At the top, make transparent and remove shadow
+                    navbar.style.backgroundColor = 'transparent';
+                    navbar.style.boxShadow = 'none';
+                    navLinks.forEach(link => {
+                        link.classList.remove('text-gray-700');
+                        link.classList.add('text-white');
+                    });
+                } else {
+                    // When scrolled, add background and shadow
+                    navbar.style.backgroundColor = '';  // Reset to default (bg-gray-50)
+                    navbar.style.boxShadow = '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)'; // shadow-md
+                    navLinks.forEach(link => {
+                        link.classList.remove('text-white');
+                        link.classList.add('text-gray-700');
+                    });
+                }
+            }
+        </script>
     </body>
 </html>
