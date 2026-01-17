@@ -382,100 +382,208 @@
         <div class="container">
             <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                 <p>My Portfolio</p>
-                <h2>Projects</h2>
-            </div>
-            <div class="row container gap-4">
-                <div class="row portfolio-container col-lg-6 col-md-6 col-sm-12">
-                    <div class="col-lg-12 col-md-12 col-sm-12 portfolio-item filter-2">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/mm.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text-overlay">
-                                <h3>Captivate Events Website</h3>
-                                <a class="btn jp_portfolio_captivate" href="https://www.captivateevents.com.au/"
-                                    target="_blank">Visit website</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row portfolio-container col-lg-6 col-md-6 col-sm-12">
-                    <div class="col-lg-12 col-md-12 col-sm-12 portfolio-item filter-2">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/mm2.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text-overlay">
-                                <h3>Momentum Media Website</h3>
-                                <a class="btn jp_portfolio_mm" href="https://www.momentummedia.com.au/"
-                                    target="_blank">Visit website</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row portfolio-container col-lg-6 col-md-6 col-sm-12">
-                    <div class="col-lg-12 col-md-12 col-sm-12 portfolio-item filter-2">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/mm4.png" alt="Image">
-                            </div>
-                            <div class="portfolio-text-overlay">
-                                <h3>Momentum Professional</h3>
-                                <a class="btn jp_portfolio_mp" href="https://momentumprofessional.com.au/"
-                                    target="_blank">Visit website</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row portfolio-container col-lg-6 col-md-6 col-sm-12">
-                    <div class="col-lg-12 col-md-12 col-sm-12 portfolio-item filter-2">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/mm3.png" alt="Image">
-                            </div>
-                            <div class="portfolio-text-overlay">
-                                <h3>Rankings Website Single page</h3>
-                                <a class="btn jp_portfolio_top50"
-                                    href="https://www.realestatebusiness.com.au/top-50-agents-2022"
-                                    target="_blank">Visit website</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row portfolio-container col-lg-6 col-md-6 col-sm-12">
-                    <div class="col-lg-12 col-md-12 col-sm-12 portfolio-item filter-1">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/datamob.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text-overlay">
-                                <h3>Campus-ERP — Data Analytics</h3>
-                                <a class="btn jp_portfolio_campuserp" href="https://www.youtube.com/watch?v=jjRd8-rylRU"
-                                    target="_blank">Watch video</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row portfolio-container col-lg-6 col-md-6 col-sm-12">
-                    <div class="col-lg-12 col-md-12 col-sm-12 portfolio-item filter-3">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/asiapay.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text-overlay">
-                                <h3>Shopping cart plugins</h3>
-                                <a class="btn jp_portfolio_asiapay" href="https://github.com/asiapay-lib"
-                                    target="_blank">Visit github</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <h2>Featured Projects</h2>
             </div>
 
+            <!-- Portfolio Filter Buttons -->
+            <div class="portfolio-filter text-center mb-5">
+                <button class="filter-btn active" data-filter="*">All Projects</button>
+                <button class="filter-btn" data-filter=".filter-corporate">Corporate Sites</button>
+                <button class="filter-btn" data-filter=".filter-ecommerce">E-commerce</button>
+                <button class="filter-btn" data-filter=".filter-plugins">Plugins</button>
+                <button class="filter-btn" data-filter=".filter-rankings">Rankings</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="row portfolio-grid">
+                <!-- Captivate Events -->
+                <div class="col-lg-6 col-md-6 col-sm-12 portfolio-item filter-corporate" data-category="corporate"
+                    data-tech="WordPress,PHP,MySQL" data-year="2023" data-role="Lead Developer">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img-wrapper">
+                            <img src="img/mm.jpg" alt="Captivate Events Website">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-details">
+                                    <h3>Captivate Events</h3>
+                                    <p class="project-desc">Event management platform with booking system</p>
+                                    <div class="tech-badges">
+                                        <span class="tech-badge">WordPress</span>
+                                        <span class="tech-badge">PHP</span>
+                                        <span class="tech-badge">MySQL</span>
+                                    </div>
+                                    <div class="project-meta">
+                                        <span><i class="fas fa-calendar"></i> 2023</span>
+                                        <span><i class="fas fa-user"></i> Lead Developer</span>
+                                    </div>
+                                    <div class="project-actions">
+                                        <a href="https://www.captivateevents.com.au/" target="_blank"
+                                            class="btn btn-primary">
+                                            <i class="fas fa-external-link-alt"></i> Visit Site
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Momentum Media -->
+                <div class="col-lg-6 col-md-6 col-sm-12 portfolio-item filter-corporate" data-category="corporate"
+                    data-tech="WordPress,PHP,AWS" data-year="2022" data-role="Full-stack Developer">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img-wrapper">
+                            <img src="img/mm2.jpg" alt="Momentum Media Website">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-details">
+                                    <h3>Momentum Media</h3>
+                                    <p class="project-desc">Multi-site media platform serving 100K+ monthly visitors</p>
+                                    <div class="tech-badges">
+                                        <span class="tech-badge">WordPress</span>
+                                        <span class="tech-badge">PHP</span>
+                                        <span class="tech-badge">AWS</span>
+                                    </div>
+                                    <div class="project-meta">
+                                        <span><i class="fas fa-calendar"></i> 2022</span>
+                                        <span><i class="fas fa-user"></i> Full-stack Developer</span>
+                                    </div>
+                                    <div class="project-actions">
+                                        <a href="https://www.momentummedia.com.au/" target="_blank"
+                                            class="btn btn-primary">
+                                            <i class="fas fa-external-link-alt"></i> Visit Site
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Momentum Professional -->
+                <div class="col-lg-6 col-md-6 col-sm-12 portfolio-item filter-corporate" data-category="corporate"
+                    data-tech="WordPress,PHP,JavaScript" data-year="2023" data-role="Developer">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img-wrapper">
+                            <img src="img/mm4.png" alt="Momentum Professional">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-details">
+                                    <h3>Momentum Professional</h3>
+                                    <p class="project-desc">Professional services platform with custom features</p>
+                                    <div class="tech-badges">
+                                        <span class="tech-badge">WordPress</span>
+                                        <span class="tech-badge">PHP</span>
+                                        <span class="tech-badge">JavaScript</span>
+                                    </div>
+                                    <div class="project-meta">
+                                        <span><i class="fas fa-calendar"></i> 2023</span>
+                                        <span><i class="fas fa-user"></i> Developer</span>
+                                    </div>
+                                    <div class="project-actions">
+                                        <a href="https://momentumprofessional.com.au/" target="_blank"
+                                            class="btn btn-primary">
+                                            <i class="fas fa-external-link-alt"></i> Visit Site
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rankings Website -->
+                <div class="col-lg-6 col-md-6 col-sm-12 portfolio-item filter-rankings" data-category="rankings"
+                    data-tech="HTML,CSS,JavaScript" data-year="2022" data-role="Frontend Developer">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img-wrapper">
+                            <img src="img/mm3.png" alt="Rankings Website">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-details">
+                                    <h3>Top 50 Agents Rankings</h3>
+                                    <p class="project-desc">Interactive single-page rankings platform</p>
+                                    <div class="tech-badges">
+                                        <span class="tech-badge">HTML</span>
+                                        <span class="tech-badge">CSS</span>
+                                        <span class="tech-badge">JavaScript</span>
+                                    </div>
+                                    <div class="project-meta">
+                                        <span><i class="fas fa-calendar"></i> 2022</span>
+                                        <span><i class="fas fa-user"></i> Frontend Developer</span>
+                                    </div>
+                                    <div class="project-actions">
+                                        <a href="https://www.realestatebusiness.com.au/top-50-agents-2022"
+                                            target="_blank" class="btn btn-primary">
+                                            <i class="fas fa-external-link-alt"></i> Visit Site
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Campus ERP -->
+                <div class="col-lg-6 col-md-6 col-sm-12 portfolio-item filter-ecommerce" data-category="erp"
+                    data-tech="PHP,MySQL,Data Analytics" data-year="2018" data-role="Programmer/Analyst">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img-wrapper">
+                            <img src="img/datamob.jpg" alt="Campus-ERP">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-details">
+                                    <h3>Campus-ERP</h3>
+                                    <p class="project-desc">School management system with data analytics</p>
+                                    <div class="tech-badges">
+                                        <span class="tech-badge">PHP</span>
+                                        <span class="tech-badge">MySQL</span>
+                                        <span class="tech-badge">Analytics</span>
+                                    </div>
+                                    <div class="project-meta">
+                                        <span><i class="fas fa-calendar"></i> 2018</span>
+                                        <span><i class="fas fa-user"></i> Programmer/Analyst</span>
+                                    </div>
+                                    <div class="project-actions">
+                                        <a href="https://www.youtube.com/watch?v=jjRd8-rylRU" target="_blank"
+                                            class="btn btn-primary">
+                                            <i class="fas fa-play"></i> Watch Demo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E-commerce Plugins -->
+                <div class="col-lg-6 col-md-6 col-sm-12 portfolio-item filter-plugins filter-ecommerce"
+                    data-category="plugins" data-tech="PHP,Java,Payment Gateways" data-year="2020"
+                    data-role="Senior Programmer">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img-wrapper">
+                            <img src="img/asiapay.jpg" alt="E-commerce Plugins">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-details">
+                                    <h3>E-commerce Plugins</h3>
+                                    <p class="project-desc">50+ payment gateway plugins for 10+ platforms</p>
+                                    <div class="tech-badges">
+                                        <span class="tech-badge">PHP</span>
+                                        <span class="tech-badge">Java</span>
+                                        <span class="tech-badge">WooCommerce</span>
+                                        <span class="tech-badge">Magento</span>
+                                    </div>
+                                    <div class="project-meta">
+                                        <span><i class="fas fa-calendar"></i> 2020</span>
+                                        <span><i class="fas fa-user"></i> Senior Programmer</span>
+                                    </div>
+                                    <div class="project-actions">
+                                        <a href="https://github.com/asiapay-lib" target="_blank"
+                                            class="btn btn-primary">
+                                            <i class="fab fa-github"></i> View on GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -595,6 +703,7 @@
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
     <script src="js/typing-animation.js"></script>
+    <script src="js/portfolio-filter.js"></script>
     <script src="js/main.js"></script>
 
     <script>
