@@ -1,0 +1,429 @@
+/* ===============================================
+   WORKING EXPERIENCE TIMELINE - MODERN ENHANCEMENTS
+   =============================================== */
+
+/* Enhanced Timeline Container */
+.experience .timeline {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+}
+
+/* Modern Gradient Timeline Line */
+.experience .timeline::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    background: linear-gradient(180deg,
+            rgba(24, 66, 103, 0.2) 0%,
+            rgba(24, 66, 103, 1) 50%,
+            rgba(24, 66, 103, 0.2) 100%);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+    border-radius: 2px;
+    box-shadow: 0 0 20px rgba(24, 66, 103, 0.3);
+}
+
+/* Enhanced Timeline Items */
+.experience .timeline .timeline-item {
+    position: relative;
+    background: inherit;
+    width: 50%;
+    margin-bottom: 50px;
+    opacity: 0;
+    animation: fadeInTimeline 0.8s ease-out forwards;
+}
+
+/* Staggered Animation Delays */
+.experience .timeline .timeline-item:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.experience .timeline .timeline-item:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.experience .timeline .timeline-item:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* Timeline Item Positioning */
+.experience .timeline .timeline-item.left {
+    left: 0;
+    padding-right: 40px;
+}
+
+.experience .timeline .timeline-item.right {
+    left: 50%;
+    padding-left: 40px;
+}
+
+/* Enhanced Timeline Dot with Pulse Animation */
+.experience .timeline .timeline-item::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 48px;
+    right: -12px;
+    background: linear-gradient(135deg, #184267 0%, #0062b9 100%);
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 0 0 0 rgba(24, 66, 103, 0.4);
+    animation: pulse 2s infinite;
+    transition: all 0.3s ease;
+}
+
+.experience .timeline .timeline-item:hover::after {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(24, 66, 103, 0.6);
+}
+
+.experience .timeline .timeline-item.right::after {
+    left: -12px;
+}
+
+/* Pulse Animation for Timeline Dots */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(24, 66, 103, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 0 15px rgba(24, 66, 103, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(24, 66, 103, 0);
+    }
+}
+
+/* Fade In Timeline Animation */
+@keyframes fadeInTimeline {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Modern Arrow Connector */
+.experience .timeline .timeline-item::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50px;
+    right: 18px;
+    z-index: 1;
+    border: 12px solid;
+    border-color: transparent transparent transparent rgba(24, 66, 103, 0.1);
+    transition: all 0.3s ease;
+}
+
+.experience .timeline .timeline-item.right::before {
+    left: 18px;
+    border-color: transparent rgba(24, 66, 103, 0.1) transparent transparent;
+}
+
+.experience .timeline .timeline-item:hover::before {
+    border-color: transparent transparent transparent rgba(24, 66, 103, 0.2);
+}
+
+.experience .timeline .timeline-item.right:hover::before {
+    border-color: transparent rgba(24, 66, 103, 0.2) transparent transparent;
+}
+
+/* Enhanced Timeline Date Badge */
+.experience .timeline .timeline-date {
+    position: absolute;
+    width: 100%;
+    top: 44px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    background: linear-gradient(135deg, #184267 0%, #0062b9 100%);
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+    box-shadow: 0 4px 12px rgba(24, 66, 103, 0.3);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.experience .timeline .timeline-item:hover .timeline-date {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(24, 66, 103, 0.4);
+}
+
+.experience .timeline .timeline-item.left .timeline-date {
+    text-align: left;
+    left: calc(100% + 65px);
+}
+
+.experience .timeline .timeline-item.right .timeline-date {
+    text-align: right;
+    right: calc(100% + 65px);
+}
+
+/* Premium Timeline Content Card */
+.experience .timeline .timeline-text {
+    padding: 35px;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    position: relative;
+    border-left: 5px solid transparent;
+    border-image: linear-gradient(180deg, #184267 0%, #0062b9 100%) 1;
+    box-shadow: 0 10px 40px rgba(24, 66, 103, 0.12);
+    border-radius: 12px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Animated Background Gradient on Hover */
+.experience .timeline .timeline-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(24, 66, 103, 0.03) 0%, rgba(0, 98, 185, 0.03) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 0;
+}
+
+.experience .timeline .timeline-text:hover::before {
+    opacity: 1;
+}
+
+.experience .timeline .timeline-text:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 60px rgba(24, 66, 103, 0.2);
+    border-image: linear-gradient(180deg, #0062b9 0%, #184267 100%) 1;
+}
+
+.experience .timeline .timeline-item.right .timeline-text {
+    border-left: none;
+    border-right: 5px solid transparent;
+    border-image: linear-gradient(180deg, #184267 0%, #0062b9 100%) 1;
+}
+
+/* Content Styling */
+.experience .timeline .timeline-text h2 {
+    margin: 0 0 8px 0;
+    font-size: 26px;
+    font-weight: 700;
+    color: #184267;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+.experience .timeline .timeline-text:hover h2 {
+    color: #0062b9;
+}
+
+.experience .timeline .timeline-text h4 {
+    margin: 0 0 20px 0;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 500;
+    color: #6c757d;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(24, 66, 103, 0.1);
+}
+
+/* Enhanced List Styling */
+.experience .timeline .timeline-text ul {
+    margin: 20px 0 0 0;
+    padding-left: 0;
+    list-style: none;
+    position: relative;
+    z-index: 1;
+}
+
+.experience .timeline .timeline-text ul li {
+    margin-bottom: 16px;
+    padding-left: 32px;
+    position: relative;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #495057;
+    transition: all 0.3s ease;
+}
+
+/* Custom Bullet Points with Icons */
+.experience .timeline .timeline-text ul li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #184267;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.experience .timeline .timeline-text ul li:hover {
+    padding-left: 40px;
+    color: #184267;
+}
+
+.experience .timeline .timeline-text ul li:hover::before {
+    color: #0062b9;
+    transform: translateX(4px);
+}
+
+/* Strong Text Highlighting */
+.experience .timeline .timeline-text ul li strong {
+    color: #184267;
+    font-weight: 700;
+    background: linear-gradient(120deg, rgba(24, 66, 103, 0.1) 0%, rgba(0, 98, 185, 0.1) 100%);
+    padding: 2px 6px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.experience .timeline .timeline-text ul li:hover strong {
+    background: linear-gradient(120deg, rgba(24, 66, 103, 0.15) 0%, rgba(0, 98, 185, 0.15) 100%);
+}
+
+/* Responsive Design */
+@media (max-width: 767.98px) {
+    .experience .timeline::after {
+        left: 20px;
+        width: 3px;
+    }
+
+    .experience .timeline .timeline-item {
+        width: 100%;
+        padding-left: 60px;
+        margin-bottom: 40px;
+    }
+
+    .experience .timeline .timeline-item.left {
+        padding-right: 0;
+    }
+
+    .experience .timeline .timeline-item.right {
+        left: 0%;
+        padding-left: 60px;
+    }
+
+    .experience .timeline .timeline-item.left::after,
+    .experience .timeline .timeline-item.right::after {
+        left: 8px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .experience .timeline .timeline-item.left::before,
+    .experience .timeline .timeline-item.right::before {
+        left: 40px;
+        border-color: transparent rgba(24, 66, 103, 0.1) transparent transparent;
+    }
+
+    .experience .timeline .timeline-item.left .timeline-date,
+    .experience .timeline .timeline-item.right .timeline-date {
+        position: relative;
+        top: 0;
+        right: auto;
+        left: 0;
+        text-align: left;
+        margin-bottom: 15px;
+        font-size: 12px;
+        padding: 6px 12px;
+        display: inline-block;
+        width: auto;
+    }
+
+    .experience .timeline .timeline-item.left .timeline-text,
+    .experience .timeline .timeline-item.right .timeline-text {
+        border-right: none;
+        border-left: 4px solid transparent;
+        border-image: linear-gradient(180deg, #184267 0%, #0062b9 100%) 1;
+        padding: 25px 20px;
+    }
+
+    .experience .timeline .timeline-text h2 {
+        font-size: 22px;
+    }
+
+    .experience .timeline .timeline-text h4 {
+        font-size: 15px;
+        margin-bottom: 15px;
+        padding-bottom: 12px;
+    }
+
+    .experience .timeline .timeline-text ul li {
+        font-size: 14px;
+        margin-bottom: 12px;
+        padding-left: 28px;
+    }
+
+    .experience .timeline .timeline-text ul li::before {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .experience .timeline .timeline-text {
+        padding: 20px 16px;
+    }
+
+    .experience .timeline .timeline-text h2 {
+        font-size: 20px;
+    }
+
+    .experience .timeline .timeline-text h4 {
+        font-size: 14px;
+    }
+
+    .experience .timeline .timeline-text ul li {
+        font-size: 13px;
+        line-height: 1.6;
+        padding-left: 24px;
+    }
+
+    .experience .timeline .timeline-text ul li::before {
+        font-size: 16px;
+    }
+}
+
+/* Section Header Enhancement */
+.experience .section-header {
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.experience .section-header::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #184267 0%, #0062b9 100%);
+    border-radius: 2px;
+}
+
+/* Scroll Reveal Animation Enhancement */
+.experience .timeline-item.wow {
+    visibility: hidden;
+}
+
+.experience .timeline-item.wow.slideInLeft,
+.experience .timeline-item.wow.slideInRight {
+    visibility: visible;
+}

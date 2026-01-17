@@ -490,186 +490,400 @@
     margin: 3px;
   }
 }
- 
- / *   = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
-       S K I L L S   S E C T I O N   E N H A N C E M E N T S 
-       = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =   * / 
- 
- / *   A c h i e v e m e n t   C a r d s   * / 
- . a c h i e v e m e n t s - s e c t i o n   { 
-     m a r g i n - t o p :   4 0 p x ; 
- } 
- 
- . a c h i e v e m e n t - c a r d   { 
-     b a c k g r o u n d :   l i n e a r - g r a d i e n t ( 1 3 5 d e g ,   # 6 6 7 e e a   0 % ,   # 7 6 4 b a 2   1 0 0 % ) ; 
-     p a d d i n g :   3 0 p x   2 0 p x ; 
-     b o r d e r - r a d i u s :   1 5 p x ; 
-     t e x t - a l i g n :   c e n t e r ; 
-     c o l o r :   # f f f f f f ; 
-     t r a n s i t i o n :   a l l   0 . 3 s   e a s e ; 
-     b o x - s h a d o w :   0   4 p x   1 5 p x   r g b a ( 0 ,   0 ,   0 ,   0 . 1 ) ; 
- } 
- 
- . a c h i e v e m e n t - c a r d : h o v e r   { 
-     t r a n s f o r m :   t r a n s l a t e Y ( - 1 0 p x ) ; 
-     b o x - s h a d o w :   0   1 2 p x   3 0 p x   r g b a ( 1 0 2 ,   1 2 6 ,   2 3 4 ,   0 . 4 ) ; 
- } 
- 
- . a c h i e v e m e n t - i c o n   { 
-     f o n t - s i z e :   4 0 p x ; 
-     m a r g i n - b o t t o m :   1 5 p x ; 
-     o p a c i t y :   0 . 9 ; 
- } 
- 
- . a c h i e v e m e n t - n u m b e r   { 
-     f o n t - s i z e :   4 2 p x ; 
-     f o n t - w e i g h t :   7 0 0 ; 
-     l i n e - h e i g h t :   1 ; 
-     m a r g i n - b o t t o m :   1 0 p x ; 
- } 
- 
- . a c h i e v e m e n t - l a b e l   { 
-     f o n t - s i z e :   1 3 p x ; 
-     f o n t - w e i g h t :   5 0 0 ; 
-     t e x t - t r a n s f o r m :   u p p e r c a s e ; 
-     l e t t e r - s p a c i n g :   0 . 5 p x ; 
-     o p a c i t y :   0 . 9 ; 
- } 
- 
- / *   C o r e   S k i l l s   P r o f i c i e n c y   B a r s   * / 
- . c o r e - s k i l l s - s e c t i o n   { 
-     m a r g i n - t o p :   4 0 p x ; 
- } 
- 
- . s k i l l - b a r - c o n t a i n e r   { 
-     m a x - w i d t h :   8 0 0 p x ; 
-     m a r g i n :   0   a u t o ; 
- } 
- 
- . s k i l l - b a r - i t e m   { 
-     m a r g i n - b o t t o m :   2 5 p x ; 
- } 
- 
- . s k i l l - b a r - h e a d e r   { 
-     d i s p l a y :   f l e x ; 
-     j u s t i f y - c o n t e n t :   s p a c e - b e t w e e n ; 
-     m a r g i n - b o t t o m :   8 p x ; 
- } 
- 
- . s k i l l - n a m e   { 
-     f o n t - s i z e :   1 5 p x ; 
-     f o n t - w e i g h t :   6 0 0 ; 
-     c o l o r :   # 3 3 3 ; 
- } 
- 
- . s k i l l - p e r c e n t a g e   { 
-     f o n t - s i z e :   1 4 p x ; 
-     f o n t - w e i g h t :   6 0 0 ; 
-     c o l o r :   # 1 8 4 2 6 7 ; 
- } 
- 
- . s k i l l - b a r - b g   { 
-     h e i g h t :   1 0 p x ; 
-     b a c k g r o u n d :   # e 9 e c e f ; 
-     b o r d e r - r a d i u s :   1 0 p x ; 
-     o v e r f l o w :   h i d d e n ; 
- } 
- 
- . s k i l l - b a r - f i l l   { 
-     h e i g h t :   1 0 0 % ; 
-     b a c k g r o u n d :   l i n e a r - g r a d i e n t ( 9 0 d e g ,   # 1 8 4 2 6 7   0 % ,   # 0 0 6 2 b 9   1 0 0 % ) ; 
-     b o r d e r - r a d i u s :   1 0 p x ; 
-     w i d t h :   0 ; 
-     t r a n s i t i o n :   w i d t h   1 . 5 s   e a s e - i n - o u t ; 
- } 
- 
- / *   A b o u t   A c t i o n s   * / 
- . a b o u t - a c t i o n s   { 
-     m a r g i n - t o p :   4 0 p x ; 
- } 
- 
- . a b o u t - a c t i o n s   . b t n   { 
-     p a d d i n g :   1 2 p x   3 0 p x ; 
-     f o n t - s i z e :   1 5 p x ; 
-     f o n t - w e i g h t :   6 0 0 ; 
-     m a r g i n :   5 p x ; 
-     d i s p l a y :   i n l i n e - f l e x ; 
-     a l i g n - i t e m s :   c e n t e r ; 
-     g a p :   1 0 p x ; 
- } 
- 
- . a b o u t - a c t i o n s   . b t n   i   { 
-     f o n t - s i z e :   1 6 p x ; 
- } 
- 
- . a b o u t - a c t i o n s   . b t n - p r i m a r y   { 
-     b a c k g r o u n d :   # 1 8 4 2 6 7 ; 
-     b o r d e r - c o l o r :   # 1 8 4 2 6 7 ; 
- } 
- 
- . a b o u t - a c t i o n s   . b t n - p r i m a r y : h o v e r   { 
-     b a c k g r o u n d :   # 0 0 6 2 b 9 ; 
-     b o r d e r - c o l o r :   # 0 0 6 2 b 9 ; 
- } 
- 
- . a b o u t - a c t i o n s   . b t n - s e c o n d a r y   { 
-     b a c k g r o u n d :   # 6 c 7 5 7 d ; 
-     b o r d e r - c o l o r :   # 6 c 7 5 7 d ; 
-     c o l o r :   # f f f f f f ; 
- } 
- 
- . a b o u t - a c t i o n s   . b t n - s e c o n d a r y : h o v e r   { 
-     b a c k g r o u n d :   # 5 a 6 2 6 8 ; 
-     b o r d e r - c o l o r :   # 5 4 5 b 6 2 ; 
- } 
- 
- / *   R e s p o n s i v e   A d j u s t m e n t s   * / 
- @ m e d i a   ( m a x - w i d t h :   9 9 1 . 9 8 p x )   { 
-     . a c h i e v e m e n t - n u m b e r   { 
-         f o n t - s i z e :   3 6 p x ; 
-     } 
-     
-     . a c h i e v e m e n t - i c o n   { 
-         f o n t - s i z e :   3 5 p x ; 
-     } 
-     
-     . a c h i e v e m e n t - l a b e l   { 
-         f o n t - s i z e :   1 2 p x ; 
-     } 
- } 
- 
- @ m e d i a   ( m a x - w i d t h :   7 6 7 . 9 8 p x )   { 
-     . a c h i e v e m e n t - c a r d   { 
-         p a d d i n g :   2 5 p x   1 5 p x ; 
-         m a r g i n - b o t t o m :   1 5 p x ; 
-     } 
-     
-     . a c h i e v e m e n t - n u m b e r   { 
-         f o n t - s i z e :   3 2 p x ; 
-     } 
-     
-     . a c h i e v e m e n t - i c o n   { 
-         f o n t - s i z e :   3 0 p x ; 
-     } 
-     
-     . a c h i e v e m e n t - l a b e l   { 
-         f o n t - s i z e :   1 1 p x ; 
-     } 
-     
-     . s k i l l - b a r - h e a d e r   { 
-         f l e x - d i r e c t i o n :   c o l u m n ; 
-         g a p :   5 p x ; 
-     } 
-     
-     . s k i l l - n a m e , 
-     . s k i l l - p e r c e n t a g e   { 
-         f o n t - s i z e :   1 4 p x ; 
-     } 
-     
-     . a b o u t - a c t i o n s   . b t n   { 
-         d i s p l a y :   b l o c k ; 
-         w i d t h :   1 0 0 % ; 
-         m a r g i n :   1 0 p x   0 ; 
-     } 
- }  
- 
+
+/* ===============================================
+   ABOUT SECTION - SKILLS ENHANCEMENTS
+   =============================================== */
+
+/* Skills Section Header */
+.section-header-skills {
+  margin-bottom: 50px;
+}
+
+.skills-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #184267;
+  margin-bottom: 12px;
+  position: relative;
+  display: inline-block;
+}
+
+.skills-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #184267 0%, #0062b9 100%);
+  border-radius: 2px;
+}
+
+.skills-subtitle {
+  font-size: 16px;
+  color: #6c757d;
+  font-weight: 400;
+  margin-top: 20px;
+  letter-spacing: 0.5px;
+}
+
+/* Enhanced Skills Grid */
+.skills {
+  padding: 40px 0;
+}
+
+.skills .grid>div {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(24, 66, 103, 0.08);
+  padding: 32px 24px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(24, 66, 103, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.skills .grid>div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #184267 0%, #0062b9 100%);
+  transform: scaleX(0);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: left;
+}
+
+.skills .grid>div:hover::before {
+  transform: scaleX(1);
+}
+
+.skills .grid>div:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(24, 66, 103, 0.15);
+  border-color: rgba(24, 66, 103, 0.2);
+}
+
+.skills h5 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #184267;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skills h5::before {
+  content: '';
+  width: 6px;
+  height: 24px;
+  background: linear-gradient(180deg, #184267 0%, #0062b9 100%);
+  border-radius: 3px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills ul li {
+  padding: 10px 0;
+  font-size: 15px;
+  color: #495057;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  padding-left: 8px;
+  margin-bottom: 4px;
+}
+
+.skills ul li:hover {
+  background: rgba(24, 66, 103, 0.05);
+  padding-left: 16px;
+  color: #184267;
+}
+
+.skills ul li i,
+.skills ul li img {
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.skills ul li:hover i,
+.skills ul li:hover img {
+  transform: scale(1.2);
+}
+
+/* Icon Styling */
+.skills ul li i {
+  font-size: 20px;
+  width: 24px;
+  text-align: center;
+}
+
+.skills ul li img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Responsive Adjustments for Skills */
+@media (max-width: 991.98px) {
+  .skills-title {
+    font-size: 32px;
+  }
+
+  .skills-subtitle {
+    font-size: 15px;
+  }
+
+  .skills .grid>div {
+    padding: 28px 20px;
+  }
+
+  .skills h5 {
+    font-size: 18px;
+  }
+
+  .skills ul li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .skills-title {
+    font-size: 28px;
+  }
+
+  .skills-subtitle {
+    font-size: 14px;
+  }
+
+  .skills .grid>div {
+    padding: 24px 18px;
+  }
+
+  .skills h5 {
+    font-size: 17px;
+  }
+
+  .skills ul li {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .skills-title {
+    font-size: 24px;
+  }
+
+  .section-header-skills {
+    margin-bottom: 30px;
+  }
+
+  .skills .grid>div {
+    padding: 20px 16px;
+  }
+
+  .skills h5 {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .skills ul li {
+    font-size: 13px;
+  }
+}
+
+/* ===============================================
+   LEGACY SKILLS SECTION STYLES (HIDDEN)
+   =============================================== */
+
+/* Achievement Cards */
+.achievements-section {
+  margin-top: 40px;
+}
+
+.achievement-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.4);
+}
+
+.achievement-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+.achievement-number {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.achievement-label {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+}
+
+/* Core Skills Proficiency Bars */
+.core-skills-section {
+  margin-top: 40px;
+}
+
+.skill-bar-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skill-bar-item {
+  margin-bottom: 25px;
+}
+
+.skill-bar-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.skill-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.skill-percentage {
+  font-size: 14px;
+  font-weight: 600;
+  color: #184267;
+}
+
+.skill-bar-bg {
+  height: 10px;
+  background: #e9ecef;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #184267 0%, #0062b9 100%);
+  border-radius: 10px;
+  width: 0;
+  transition: width 1.5s ease-in-out;
+}
+
+/* About Actions */
+.about-actions {
+  margin-top: 40px;
+}
+
+.about-actions .btn {
+  padding: 12px 30px;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-actions .btn i {
+  font-size: 16px;
+}
+
+.about-actions .btn-primary {
+  background: #184267;
+  border-color: #184267;
+}
+
+.about-actions .btn-primary:hover {
+  background: #0062b9;
+  border-color: #0062b9;
+}
+
+.about-actions .btn-secondary {
+  background: #6c757d;
+  border-color: #6c757d;
+  color: #ffffff;
+}
+
+.about-actions .btn-secondary:hover {
+  background: #5a6268;
+  border-color: #545b62;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+  .achievement-number {
+    font-size: 36px;
+  }
+
+  .achievement-icon {
+    font-size: 35px;
+  }
+
+  .achievement-label {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .achievement-card {
+    padding: 25px 15px;
+    margin-bottom: 15px;
+  }
+
+  .achievement-number {
+    font-size: 32px;
+  }
+
+  .achievement-icon {
+    font-size: 30px;
+  }
+
+  .achievement-label {
+    font-size: 11px;
+  }
+
+  .skill-bar-header {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .skill-name,
+  .skill-percentage {
+    font-size: 14px;
+  }
+
+  .about-actions .btn {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+}

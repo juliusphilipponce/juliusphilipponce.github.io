@@ -101,6 +101,7 @@ a:focus {
   0% {
     -webkit-transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
   }
@@ -110,6 +111,7 @@ a:focus {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -254,17 +256,16 @@ a:focus {
   margin-bottom: 45px;
   padding: 120px 0 0 0;
   overflow: hidden;
-  background: linear-gradient(
-      to right,
+  background: linear-gradient(to right,
       rgba(0, 98, 185, 0.8),
-      rgba(0, 98, 185, 0.8)
-    ),
+      rgba(0, 98, 185, 0.8)),
     url(../img/common-bg.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
+
 .mouse {
   width: 25px;
   height: 40px;
@@ -288,6 +289,7 @@ a:focus {
   animation: wheel 1.3s infinite;
   -webkit-animation: wheel 1.3s infinite;
 }
+
 @keyframes wheel {
   to {
     opacity: 0;
@@ -301,11 +303,13 @@ a:focus {
     top: 27px;
   }
 }
+
 .mouse-wrapper {
   position: absolute;
   bottom: 50px;
   left: 50%;
 }
+
 .hero .container-fluid {
   padding: 0;
 }
@@ -313,7 +317,26 @@ a:focus {
 .hero .hero-image {
   position: relative;
   text-align: right;
-  padding-right: 75px;
+  padding-right: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.hero .hero-image img {
+  max-width: 420px;
+  max-height: 600px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero .hero-image img:hover {
+  transform: scale(1.02);
+  filter: brightness(1.05);
+  opacity: 0.95;
 }
 
 .hero .hero-content {
@@ -390,6 +413,17 @@ a:focus {
     padding: 0 15px;
   }
 
+  .hero .hero-image {
+    padding-right: 30px;
+    padding-left: 30px;
+    justify-content: center;
+  }
+
+  .hero .hero-image img {
+    max-width: 350px;
+    max-height: 500px;
+  }
+
   .hero .hero-text p {
     font-size: 20px;
   }
@@ -422,6 +456,18 @@ a:focus {
     text-align: center;
   }
 
+  .hero .hero-image {
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .hero .hero-image img {
+    max-width: 260px;
+    max-height: 400px;
+  }
+
   .hero .hero-text p {
     font-size: 18px;
   }
@@ -442,6 +488,11 @@ a:focus {
 }
 
 @media (max-width: 575.98px) {
+  .hero .hero-image img {
+    max-width: 220px;
+    max-height: 340px;
+  }
+
   .hero .hero-text p {
     font-size: 16px;
   }
@@ -510,12 +561,15 @@ a:focus {
   font-size: 45px;
   font-weight: 700;
 }
+
 nav a {
   text-decoration: none !important;
 }
+
 nav a:hover {
   text-decoration: underline !important;
 }
+
 @media (max-width: 767.98px) {
   .section-header h2 {
     font-size: 30px;
@@ -585,6 +639,7 @@ nav a:hover {
 .about .skill-name p:last-child {
   float: right;
 }
+
 .skills ul {
   list-style-type: disc;
   padding-left: 0;
@@ -602,6 +657,7 @@ nav a:hover {
   width: 1.25rem;
   height: 1.25rem;
 }
+
 .about .progress {
   height: 10px;
   border-radius: 10px;
@@ -1009,10 +1065,12 @@ nav a:hover {
   align-items: center;
   gap: 20px;
 }
+
 .portfolio-text-overlay h3,
 .portfolio-text-overlay a {
   color: #fff;
 }
+
 .portfolio .portfolio-item:hover .portfolio-text-overlay .btn:hover {
   background: #fff;
   color: #184267;

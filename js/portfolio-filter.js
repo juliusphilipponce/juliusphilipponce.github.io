@@ -34,20 +34,26 @@
 
     function filterPortfolioItems(filterValue, items) {
         items.forEach((item, index) => {
+            // Skip confidential items - they should always remain hidden
+            if (item.getAttribute('data-confidential') === 'true') {
+                item.style.display = 'none';
+                return;
+            }
+
             // Add fade out animation
             item.style.opacity = '0';
             item.style.transform = 'scale(0.8)';
 
             setTimeout(() => {
                 if (filterValue === '*') {
-                    // Show all items
+                    // Show all items (except confidential)
                     item.style.display = 'block';
                     setTimeout(() => {
                         item.style.opacity = '1';
                         item.style.transform = 'scale(1)';
                     }, 50);
                 } else {
-                    // Show only matching items
+                    // Show only matching items (except confidential)
                     if (item.classList.contains(filterValue.substring(1))) {
                         item.style.display = 'block';
                         setTimeout(() => {
