@@ -1,4 +1,16 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.juliusphilip.xyz/sitemap.xml
+Disallow: /.github/
+Disallow: /.phan/
+Disallow: /assets/
+Disallow: /backup/
+Disallow: /bin/
+Disallow: /cache/
+Disallow: /logs/
+Disallow: /system/
+Disallow: /tmp/
+Disallow: /vendor/
+
+# Sitemaps
+Sitemap: https://juliusphilipponce.com/sitemap.xml
